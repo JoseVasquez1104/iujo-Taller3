@@ -37,3 +37,12 @@ long long permutaciones(int m, int n) {
     }
     return resultado;
 }
+
+// Función para calcular el exponente de un número
+double exponente(double a, int n) {
+    if (n < 0) {
+        cout << "Error: n debe ser un número entero positivo" << endl;
+        return -1;
+    }
+    return pow(a, n);
+}
