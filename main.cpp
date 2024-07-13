@@ -25,3 +25,15 @@ long long combinatoria(int n, int r) {
     return resultado;
 }
 
+// Función para calcular las permutaciones
+long long permutaciones(int m, int n) {
+    if (n > m || n < 0 || m < 0) {
+        cout << "Error: m >= n >= 0 no se cumple" << endl;
+        return -1;
+    }
+    long long resultado = 1;
+    for (int i = 1; i <= n; i++) {
+        resultado = resultado * (m - i + 1);
+    }
+    return resultado;
+}
