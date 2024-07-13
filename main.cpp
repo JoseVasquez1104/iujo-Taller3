@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/* Integrantes: Jose Vásquez, Adrian Aguirre, Jonas Dominguez, Luis Espinoza*/
+/* Integrantes: Jose Antonio Vásquez, Adrian Aguirre, Jonas Dominguez, Luis Espinoza*/
 
 /* Enunciado: Realice un programa que contenga un menú de opciones y en cada opción ejecutara los
 siguientes requerimientos.
