@@ -46,3 +46,63 @@ double exponente(double a, int n) {
     }
     return pow(a, n);
 }
+
+int main() {
+    int opcion;
+    do {
+        cout << "Menú de opciones:" << endl;
+        cout << "1. Calcular combinatoria" << endl;
+        cout << "2. Calcular permutaciones" << endl;
+        cout << "3. Calcular exponente" << endl;
+        cout << "4. Salir" << endl;
+        cout << "Ingrese una opción: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1: {
+                int n, r;
+                cout << "Ingrese el valor de n: ";
+                cin >> n;
+                cout << "Ingrese el valor de r: ";
+                cin >> r;
+                long long resultado = combinatoria(n, r);
+                if (resultado!= -1) {
+                    cout << "La combinatoria de " << n << " y " << r << " es: " << resultado << endl;
+                }
+                break;
+            }
+            case 2: {
+                int m, n;
+                cout << "Ingrese el valor de m: ";
+                cin >> m;
+                cout << "Ingrese el valor de n: ";
+                cin >> n;
+                long long resultado = permutaciones(m, n);
+                if (resultado!= -1) {
+                    cout << "Las permutaciones de " << m << " y " << n << " son: " << resultado << endl;
+                }
+                break;
+            }
+            case 3: {
+                double a;
+                int n;
+                cout << "Ingrese el valor de a: ";
+                cin >> a;
+                cout << "Ingrese el valor de n: ";
+                cin >> n;
+                double resultado = exponente(a, n);
+                if (resultado!= -1) {
+                    cout << "El exponente de " << a << " elevado a " << n << " es: " << resultado << endl;
+                }
+                break;
+            }
+            case 4:
+                cout << "Saliendo del programa..." << endl;
+                break;
+            default:
+                cout << "Opción inválida. Intente nuevamente." << endl;
+        }
+    } while (opcion!= 4);
+
+    return 0;
+}
